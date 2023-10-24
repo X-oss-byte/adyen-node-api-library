@@ -7,7 +7,6 @@
  * Do not edit this class manually.
  */
 
-import { AccountSupportingEntityCapability } from './accountSupportingEntityCapability';
 import { CapabilityProblem } from './capabilityProblem';
 import { CapabilitySettings } from './capabilitySettings';
 
@@ -38,10 +37,6 @@ export class AccountHolderCapability {
     */
     'requestedLevel'?: AccountHolderCapability.RequestedLevelEnum;
     'requestedSettings'?: CapabilitySettings;
-    /**
-    * Contains the status of the transfer instruments associated with this capability. 
-    */
-    'transferInstruments'?: Array<AccountSupportingEntityCapability>;
     /**
     * The status of the verification checks for the capability.  Possible values:  * **pending**: Adyen is running the verification.  * **invalid**: The verification failed. Check if the `errors` array contains more information.  * **valid**: The verification has been successfully completed.  * **rejected**: Adyen has verified the information, but found reasons to not allow the capability. 
     */
@@ -89,11 +84,6 @@ export class AccountHolderCapability {
             "name": "requestedSettings",
             "baseName": "requestedSettings",
             "type": "CapabilitySettings"
-        },
-        {
-            "name": "transferInstruments",
-            "baseName": "transferInstruments",
-            "type": "Array<AccountSupportingEntityCapability>"
         },
         {
             "name": "verificationStatus",

@@ -12,7 +12,6 @@ export * from './accountHolder';
 export * from './accountHolderCapability';
 export * from './accountHolderNotificationData';
 export * from './accountHolderNotificationRequest';
-export * from './accountSupportingEntityCapability';
 export * from './address';
 export * from './amount';
 export * from './authentication';
@@ -60,7 +59,6 @@ import { AccountHolder } from './accountHolder';
 import { AccountHolderCapability } from './accountHolderCapability';
 import { AccountHolderNotificationData } from './accountHolderNotificationData';
 import { AccountHolderNotificationRequest } from './accountHolderNotificationRequest';
-import { AccountSupportingEntityCapability } from './accountSupportingEntityCapability';
 import { Address } from './address';
 import { Amount } from './amount';
 import { Authentication } from './authentication';
@@ -121,9 +119,6 @@ let enumsMap: {[index: string]: any} = {
         "AccountHolderCapability.RequestedLevelEnum": AccountHolderCapability.RequestedLevelEnum,
         "AccountHolderCapability.VerificationStatusEnum": AccountHolderCapability.VerificationStatusEnum,
         "AccountHolderNotificationRequest.TypeEnum": AccountHolderNotificationRequest.TypeEnum,
-        "AccountSupportingEntityCapability.AllowedLevelEnum": AccountSupportingEntityCapability.AllowedLevelEnum,
-        "AccountSupportingEntityCapability.RequestedLevelEnum": AccountSupportingEntityCapability.RequestedLevelEnum,
-        "AccountSupportingEntityCapability.VerificationStatusEnum": AccountSupportingEntityCapability.VerificationStatusEnum,
         "BalanceAccount.StatusEnum": BalanceAccount.StatusEnum,
         "BalanceAccountNotificationRequest.TypeEnum": BalanceAccountNotificationRequest.TypeEnum,
         "CapabilityProblemEntity.TypeEnum": CapabilityProblemEntity.TypeEnum,
@@ -157,7 +152,6 @@ let typeMap: {[index: string]: any} = {
     "AccountHolderCapability": AccountHolderCapability,
     "AccountHolderNotificationData": AccountHolderNotificationData,
     "AccountHolderNotificationRequest": AccountHolderNotificationRequest,
-    "AccountSupportingEntityCapability": AccountSupportingEntityCapability,
     "Address": Address,
     "Amount": Amount,
     "Authentication": Authentication,
